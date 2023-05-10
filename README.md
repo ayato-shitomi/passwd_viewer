@@ -2,11 +2,11 @@
 
 ![home](./readme/viewer1.png)
 
-I was learning OSCP.
+I'm learning to prepare the OSCP.
 
-I created a simple viewer in /etc/passwd to find out which users can log in or not.
+I created a simple viewer in `/etc/passwd` to find out which users can log in or not.
 
-## usage
+## Usage
 
 In the Linux system, `/etc/passwd` consists of "User Name", "Password", "User ID", "Group ID", "Comment", "Home Directory" and "Login Shell".
 
@@ -15,7 +15,7 @@ In the Linux system, `/etc/passwd` consists of "User Name", "Password", "User ID
 - To show a line number which is invalid format, enable "Display an invalid line".
 - To show only loginable users, enable "Show only loginable users".
 
-## technical point of view
+## Technical point of view
 
 I wanted to deploy to GitHub Pages, so I created everything in JavaScript and HTML.
 
