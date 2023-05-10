@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>/etc/passwd Viwer</title>
+	<link href="./css/index.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>/etc/passwd Viewer ✨ </h1>
+
+	<p>
+		<form action="#">
+			<textarea type="text" id="etcPasswd" placeholder="Paste your /etc/passed here 🚀 "></textarea>
+			<input type="checkbox" id="displayInvalidElement" name="displayInvalidElement" value=1>Display an invalid line</input>
+			<input type="checkbox" id="oinlyLoginAble" name="oinlyLoginAble" value=1>Show only loginable users 🚪 </input>
+		</form>
+	</p>
+
+	<div id="etc_passwd_view"></div>
+	<script src="./js/make_view.js"></script>
+
+	<br>
+	<div class="usage">
+		<h1>Usage 🛠️ </h1>
+		<h3>Just paste your /etc/passed text above ☝️ </h3>
+
+		<button style="background-color: #333; color: #fff; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 10px 2px; transition-duration: 0.4s; cursor: pointer;">
+			<a href="https://github.com/ayato-shitomi/passwd_viewer" target="_blank" style="color: inherit; text-decoration: none;">Click here to get more info</a>
+		</button>
+		  
+		<div id="explain">
+			<p>/etc/passwd consists of "User Name",  "Password User", "ID Group", "ID Comment", "Home Directory" and "Login Shell"</p>
+			<p>To show a line number which is invalid format, enable "Display an invalid line"</p>
+			<p>To show only loginable users, enable "Show only loginable users"</p>
+			<p>Click here to follow me: </p><a href="https://twitter.com/AyatoShitomi?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @AyatoShitomi</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		</div>
+	</div>
+
+	<br><br>
+</body>
+</html>
