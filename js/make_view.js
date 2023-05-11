@@ -24,8 +24,15 @@ function inputChange(event){
                 let tmp = "<tr>";
                 let flag_nologin = false;
                 i.forEach(function(l, q) {
-                    if (l == "/usr/sbin/nologin" || l == "/bin/false" || l == "/bin/sync") {
-                        flag_nologin = true;
+                    if (q == 6) {
+                        l = l.replace(/ /g, "");
+                        if (l.indexOf("nologin") != -1 || l.indexOf("false") != -1) {
+                            flag_nologin = true;
+                        } else if (l === "/bin/sync") {
+                            flag_nologin = true;
+                        } else if (l === "") {
+                            flag_nologin = true;
+                        }
                     }
                     tmp += "<td>";
                     tmp += l;
